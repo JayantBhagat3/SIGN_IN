@@ -14,16 +14,21 @@
           <div *ngIf='loginFormCtrl.email.errors?.required'>Required</div>
           <div *ngIf='loginFormCtrl.email.errors?.email'>Enter valid email address</div>
         </div>
+        <mat-icon matSuffix>person</mat-icon>
       </mat-form-field>
 
       <mat-form-field >
         <mat-label>Password</mat-label>
-        <input type="password" formControlName="password" matInput placeholder="Password"
+        <input matInput [type]="hide ? 'password' : 'text'" formControlName="password"
                [ngClass]="{ 'is-invalid': loginFormCtrl.password.touched && loginFormCtrl.password.invalid }">
         <div class='invalid-feedback'>
           <div *ngIf='loginFormCtrl.password.errors?.required'>Required</div>
           <div *ngIf='loginFormCtrl.password.errors?.pattern'>Wrong Password !</div>
         </div>
+        <button mat-icon-button matSuffix (click)="hide = !hide">
+          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+        <mat-icon matSuffix>lock</mat-icon>
       </mat-form-field>
 
       <button mat-raised-button (click)="login()" type="submit">LogIn</button>

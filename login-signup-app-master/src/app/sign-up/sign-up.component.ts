@@ -11,6 +11,7 @@ import {ApiService} from "../services/api.service";
 export class SignUpComponent implements OnInit{
 
   signupForm: FormGroup
+  hide = true;
 
   constructor(
     public router: Router,

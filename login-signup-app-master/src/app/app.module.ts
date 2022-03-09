@@ -15,6 +15,8 @@ import {MatCardModule} from "@angular/material/card";
 import { SignUpComponent } from './sign-up/sign-up.component';
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatTabsModule} from '@angular/material/tabs';
+import {MatIconModule} from '@angular/material/icon';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import {MatTabsModule} from '@angular/material/tabs';
     MatCardModule,
     FlexLayoutModule,
     MatToolbarModule,
-    MatTabsModule
+    MatTabsModule,
+    MatIconModule,
+    MatSlideToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
