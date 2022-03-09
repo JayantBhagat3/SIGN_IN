@@ -1,5 +1,6 @@
 import {Component, EventEmitter, HostBinding, Output} from '@angular/core';
 import {MatSlideToggleChange} from "@angular/material/slide-toggle";
+import {FormControl} from "@angular/forms";
 
 @Component({
   selector: 'app-root',
@@ -8,6 +9,8 @@ import {MatSlideToggleChange} from "@angular/material/slide-toggle";
 })
 
 export class AppComponent {
+
+
   private isDark = false;
 
   @HostBinding('class')

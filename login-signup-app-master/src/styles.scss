@@ -10,7 +10,6 @@ $my-theme-accent:mat-palette($mat-pink);
 $my-theme-light:mat-light-theme($my-theme-primary, $my-theme-accent);
 $my-theme-dark:mat-dark-theme($my-theme-primary, $my-theme-accent);
 
-@include angular-material-theme($my-theme-dark);
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
