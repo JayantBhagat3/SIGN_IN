@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {Router} from "@angular/router";
 import {ApiService} from "../services/api.service";
+import {count } from"../app.component"
 
 @Component({
   selector: 'app-sign-up',
@@ -12,11 +13,12 @@ export class SignUpComponent implements OnInit{
 
   signupForm: FormGroup
   hide = true;
+  public count1=count
 
   constructor(
     public router: Router,
     private formBuilder: FormBuilder,
-    private apiService: ApiService
+    private apiService: ApiService,
   ) {}
 
   ngOnInit() {

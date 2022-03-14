@@ -1,7 +1,9 @@
 
 <mat-toolbar color="primary" >LOGIN SIGNUP APP
-    <mat-slide-toggle class="slider" >Dark Mode</mat-slide-toggle>
+    <button mat-raised-button color="accent" class="up" (click)="scaleUp()">+</button>
+    <button mat-raised-button color="accent" class="down" (click)="scaleDown()">-</button>
+    <button mat-raised-button color="accent" class="dark" (click)="isDark=!isDark" >Dark Mode</button>
 </mat-toolbar>
-
+<span [style.font-size]="returnCount() + 'px'">
 <router-outlet></router-outlet>
-
+</span>
