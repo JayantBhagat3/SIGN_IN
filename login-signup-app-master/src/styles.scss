@@ -3,7 +3,7 @@
 @include mat-core();
 
 $my-theme-primary:mat-palette($mat-indigo);
-$my-theme-accent:mat-palette($mat-amber);
+$my-theme-accent:mat-palette($mat-blue);
 
 
 
@@ -11,7 +11,7 @@ $my-theme-light:mat-light-theme($my-theme-primary, $my-theme-accent);
 $my-theme-dark:mat-dark-theme($my-theme-primary, $my-theme-accent);
 
 
-html, body { height: 100%; }
+html, body { height: 100% !important; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .theme-light{

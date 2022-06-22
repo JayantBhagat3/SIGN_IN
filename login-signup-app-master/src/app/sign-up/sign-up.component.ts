@@ -13,7 +13,11 @@ export class SignUpComponent implements OnInit{
 
   signupForm: FormGroup
   hide = true;
-  public count1=count
+  public count1=count;
+  messageEnable = false
+  message= [
+    {severity:'success', summary:'Success', detail:'Message Content'}
+  ];
 
   constructor(
     public router: Router,
@@ -35,11 +39,12 @@ export class SignUpComponent implements OnInit{
     return this.signupForm.controls
   }
 
+
   submit() {
     this.apiService.signupApi(this.signupForm.value).subscribe(response => {
-      alert(response)
+      if(response) this.messageEnable = true
     }, (err) => {
-      alert(err)
+      this.messageEnable = true
     })
   }
 

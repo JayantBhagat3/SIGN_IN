@@ -51,6 +51,10 @@
             ],
             "styles": [
               "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/primeicons/primeicons.css",
+              "node_modules/primeng-lts/resources/themes/saga-blue/theme.css",
+              "node_modules/primeng-lts/resources/primeng.min.css",
+
               "src/styles.scss"
             ],
             "scripts": [

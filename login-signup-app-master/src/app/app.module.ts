@@ -17,6 +17,11 @@ import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatIconModule} from '@angular/material/icon';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import {ButtonModule} from "primeng-lts/button";
+import {RatingModule} from "primeng-lts/rating";
+import {MessagesModule} from 'primeng-lts/messages';
+import {MessageModule} from 'primeng-lts/message';
+import {MatDialogModule} from "@angular/material/dialog";
 
 @NgModule({
   declarations: [
@@ -40,7 +45,12 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
     MatToolbarModule,
     MatTabsModule,
     MatIconModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    ButtonModule,
+    RatingModule,
+    MessageModule,
+    MessagesModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
